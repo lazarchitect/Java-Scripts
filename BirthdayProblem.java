@@ -1,22 +1,22 @@
 public class BirthdayProblem{
 
 	public static boolean match(){
-	int [] arr = new int [23];
+		int [] arr = new int [23];
 
-	for (int i=0; i<arr.length; i++) {
-		arr[i] = (int)(Math.random()*365);
-	}
+		for (int i=0; i<arr.length; i++) {
+			arr[i] = (int)(Math.random()*365);
+		}
 
-	for (int i=0; i<=arr.length; i++) {
-		for (int q = i+1; q<arr.length; q++) {
-			if (arr[i] == arr[q]){
-			//System.out.println("yes, two people have the same birthday.");
-			return true;
+		for (int i=0; i<=arr.length; i++) {
+			for (int q = i+1; q<arr.length; q++) {
+				if (arr[i] == arr[q]){
+				//System.out.println("yes, two people have the same birthday.");
+				return true;
+				}
 			}
 		}
-	}
-	//System.out.println("no matches.");
-	return false;
+		//System.out.println("no matches.");
+		return false;
 	}
 
 	public static void main(String [] args){
